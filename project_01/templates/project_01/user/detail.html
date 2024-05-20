@@ -1,0 +1,86 @@
+<!-- Arquivos estáticos -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Detalhes do usuário</title>
+
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="{% static 'media/favicon/favicon.ico' %}"
+        />
+    </head>
+    <body>
+        <!-- Inclusão do arquivo base do HTML -->
+        {% include 'project_01/base.html' %} {% if user %}
+
+        <main>
+            <section id="detail">
+                <div class="container">
+                    <div class="texto-detail">
+                        <h1>
+                            Detalhes do usuário:
+                            <span> {{user.nome}} {{user.sobrenome}}</span>
+                        </h1>
+                    </div>
+
+                    <ul>
+                        <li>ID: <span>{{user.id}}</span></li>
+                        <li>Nome: <span>{{user.nome}}</span></li>
+                        <li>Sobrenome: <span>{{user.sobrenome}}</span></li>
+                        <li>CPF: <span>{{user.cpf}}</span></li>
+                        <li>Email: <span>{{user.email_funcional}}</span></li>
+                        <li>
+                            Data e hora de cadastro:
+                            <span>{{user.data_cadastro}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        {% else %}
+        <main>
+            <section id="detail-user">
+                <div class="container">
+                    <div class="texto-detail-user">
+                        <h1>Nenhum usuário encontrado para este ID</h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+        {% endif %}
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>Todos os direitos reservados &copy; Eliezer Bergamo</p>
+
+                <div class="footer">
+                    <a href="mailto:eliezerbergamo@gmail.com" target="_blank"
+                        ><img
+                            src="{% static 'media/icons/email_icon.png' %}"
+                            alt="Email"
+                    /></a>
+                    <a href="https://github.com/EliezerBergamo" target="_blank"
+                        ><img
+                            src="{% static 'media/icons/github_icon.png' %}"
+                            alt="GitHub"
+                    /></a>
+                    <a
+                        href="https://www.linkedin.com/in/eliezer-bergamo"
+                        target="_blank"
+                        ><img
+                            src="{% static 'media/icons/linkedin_icon.png' %}"
+                            alt="LinkedIn"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

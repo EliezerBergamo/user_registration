@@ -1,0 +1,54 @@
+<!-- Arquivos estáticos -->
+{% load static %}
+
+<!-- Arquivo CSS -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+<!-- Arquivo JavaScript -->
+<script src="{% static 'js/script.js' %}" defer></script>
+
+<!-- Importação da fonte "Ubuntu" do Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet"
+/>
+
+<main>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="{% static 'media/symbols/logo.png' %}" alt="logo" />
+                <p>Cadastro de usuários</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="{% url 'project_01:home' %}"
+                        ><img
+                            src="{% static 'media/symbols/home.png' %}"
+                            alt="home"
+                            title="Home"
+                    /></a>
+                </li>
+                <li>
+                    <a href="{% url 'project_01:list_user' %}"
+                        ><img
+                            src="{% static 'media/symbols/list.png' %}"
+                            alt="Lista de usuários"
+                            title="Lista de usuários"
+                    /></a>
+                </li>
+                <li>
+                    <a href="{% url 'project_01:create_user' %}"
+                        ><img
+                            src="{% static 'media/symbols/plus.png' %}"
+                            alt="Cadastrar novo usuário"
+                            title="Cadastrar novo usuário"
+                    /></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</main>

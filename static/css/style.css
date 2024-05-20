@@ -1,0 +1,551 @@
+:root {
+    --azul-claro: #8cb0d9;
+    --azul-escuro: #0d1927;
+    --azul-medio: #1a324c;
+    --branco: #fff;
+    --branco-medio: #f7fafc;
+    --cinza-claro: #f2f2f2ff;
+    --cinza-escuro: #2d2d34ff;
+    --preto: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-image: linear-gradient(
+        to bottom,
+        var(--azul-escuro) 50%,
+        var(--azul-medio)
+    );
+}
+
+/* Utilitários */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: var(--azul-escuro);
+    backdrop-filter: blur(0.5rem);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav .logo {
+    display: inline;
+    cursor: not-allowed;
+}
+
+nav .logo p {
+    display: inline;
+    color: var(--branco-medio);
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+nav .logo img {
+    max-height: 30px;
+    margin: 1.5rem;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a img {
+    max-height: 30px;
+    margin: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--branco-medio);
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 0.75rem;
+    transition: color 0.15s ease;
+    font-weight: 100;
+}
+
+nav ul li a:hover {
+    color: var(--azul-claro);
+}
+
+/* Section: Hero (index.html) */
+#hero {
+    padding: 10rem 0;
+    height: 829px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    color: var(--branco-medio);
+    font-weight: 500;
+    font-size: 8rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#hero h2 {
+    text-align: justify;
+    color: var(--azul-claro);
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#hero .action {
+    display: flex;
+    justify-content: center;
+}
+
+#hero .action a {
+    color: var(--branco-medio);
+    font-size: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    margin-right: 2.5rem;
+    transition: color 0.15s ease;
+}
+
+#hero .action a:hover {
+    color: var(--azul-claro);
+}
+
+/* Section: List (list.html) */
+
+#list {
+    padding: 10rem 0;
+    min-height: 1750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#list h1 {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--branco-medio);
+    font-weight: 500;
+    font-size: 8rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#list h2 {
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: justify;
+    color: var(--azul-claro);
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#list table {
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+}
+
+#list table thead {
+    border: 0.2rem solid var(--azul-medio);
+    background-color: var(--cinza-claro);
+}
+
+#list table thead tr {
+    text-align: center;
+    color: var(--azul-medio);
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#list table thead tr th {
+    padding: 1rem;
+    border-right: 0.2rem solid var(--azul-medio);
+}
+
+#list table tbody {
+    border: 0.2rem solid var(--azul-medio);
+    background-color: var(--cinza-claro);
+}
+
+#list table tbody tr {
+    text-align: center;
+    color: var(--azul-medio);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#list table tbody tr #user_id {
+    font-weight: 600;
+}
+
+#list table tbody tr td {
+    padding: 0.5rem 0;
+    border-right: 0.2rem solid var(--azul-medio);
+    border-bottom: 0.2rem solid var(--azul-medio);
+}
+
+#list table tbody tr #actions {
+    width: 25rem;
+}
+
+#list table tbody tr #actions a {
+    padding: 0 1rem;
+}
+
+#list table tbody tr img {
+    max-height: 30px;
+}
+
+/* Section: New (new.html) */
+
+#new {
+    padding: 10rem 0;
+    height: 829px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#new h1 {
+    color: var(--branco-medio);
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+#new h2 {
+    text-align: justify;
+    color: var(--azul-claro);
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+#new form label {
+    color: var(--branco-medio);
+    font-weight: 300;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+#new form input {
+    margin-bottom: 1rem;
+}
+
+#new form input[type="text"],
+#new form input[type="email"],
+#new form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 0.2rem solid var(--azul-medio);
+    border-radius: 0.5rem;
+    background-color: var(--cinza-claro);
+}
+
+#new form button {
+    background-color: transparent;
+    border: 2px solid var(--branco-medio);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: var(--branco-medio);
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#new form button:hover {
+    background-color: var(--branco-medio);
+    color: var(--azul-escuro);
+}
+
+/* Section: Detail (detail.html) */
+
+#detail {
+    padding: 10rem 0;
+    height: 829px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#detail h1 {
+    color: var(--branco-medio);
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+#detail h1 span {
+    color: var(--azul-claro);
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+#detail ul {
+    list-style: none;
+    margin: 0;
+}
+
+#detail ul li {
+    color: var(--branco-medio);
+    font-weight: 100;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#detail ul li span {
+    color: var(--azul-claro);
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+/* Section: Detail User (detail.html) */
+
+#detail-user {
+    padding: 10rem 0;
+    height: 829px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#detail-user h1 {
+    color: var(--branco-medio);
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Section: Update (update.html) */
+
+#update {
+    padding: 10rem 0;
+    height: 829px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#update h1 {
+    color: var(--branco-medio);
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+#update ul {
+    list-style: none;
+    margin: 0;
+}
+
+#update ul li {
+    color: var(--branco-medio);
+    font-weight: 100;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+#update ul li span {
+    color: var(--azul-claro);
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+#detail ul {
+    list-style: none;
+    margin: 0;
+}
+
+#update form label {
+    color: var(--branco-medio);
+    font-weight: 300;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+#update form input {
+    margin-bottom: 1rem;
+}
+
+#update form input[type="text"],
+#update form input[type="email"],
+#update form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 0.2rem solid var(--azul-medio);
+    border-radius: 0.5rem;
+    background-color: var(--cinza-claro);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#update form button {
+    background-color: transparent;
+    border: 2px solid var(--branco-medio);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: var(--branco-medio);
+    margin-top: 1.5rem;
+}
+
+#update form button:hover {
+    background-color: var(--branco-medio);
+    color: var(--azul-escuro);
+}
+
+#new form button {
+    background-color: transparent;
+    border: 2px solid var(--branco-medio);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: var(--branco-medio);
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#new form button:hover {
+    background-color: var(--branco-medio);
+    color: var(--azul-escuro);
+}
+
+/* Section: Delete (delete.html) */
+
+#delete {
+    padding: 10rem 0;
+    height: 829px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete h1 {
+    color: var(--branco-medio);
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+#delete h1 span {
+    color: var(--azul-claro);
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+#delete form p {
+    color: var(--branco-medio);
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#delete form button {
+    background-color: transparent;
+    border: 2px solid var(--branco-medio);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: var(--branco-medio);
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#delete form button:hover {
+    background-color: var(--branco-medio);
+    color: var(--azul-escuro);
+}
+
+
+/* Section: Delete User (delete.html) */
+
+#delete-user {
+    padding: 10rem 0;
+    height: 829px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete-user h1 {
+    color: var(--branco-medio);
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: transparent;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: var(--azul-claro);
+    font-size: 2rem;
+}
+
+footer .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    max-height: 40px;
+    margin: 1.5rem;
+}

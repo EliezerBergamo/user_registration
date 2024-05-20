@@ -1,0 +1,80 @@
+<!-- Arquivos estáticos -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Deleção de usuário</title>
+
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="{% static 'media/favicon/favicon.ico' %}"
+        />
+    </head>
+    <body>
+        <!-- Inclusão do arquivo base do HTML -->
+        {% include 'project_01/base.html' %} {% if not_found %}
+        <main>
+            <section id="delete-user">
+                <div class="container">
+                    <div class="texto-detail-user">
+                        <h1>Nenhum usuário encontrado para este ID</h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+        {% else %}
+        <main>
+            <section id="delete">
+                <div class="container">
+                    <div class="texto-delete">
+                        <h1>
+                            Deleção de usuário:
+                            <span>{{ user.nome }} {{ user.sobrenome}}</span>
+                        </h1>
+                    </div>
+                    <form method="post">
+                        {% csrf_token %}
+
+                        <p>Quer mesmo deletar o usuário?</p>
+
+                        <button type="submit">Confirmar deleção</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        {% endif %}
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>Todos os direitos reservados &copy; Eliezer Bergamo</p>
+
+                <div class="footer">
+                    <a href="mailto:eliezerbergamo@gmail.com" target="_blank"
+                        ><img
+                            src="{% static 'media/icons/email_icon.png' %}"
+                            alt="Email"
+                    /></a>
+                    <a href="https://github.com/EliezerBergamo" target="_blank"
+                        ><img
+                            src="{% static 'media/icons/github_icon.png' %}"
+                            alt="GitHub"
+                    /></a>
+                    <a
+                        href="https://www.linkedin.com/in/eliezer-bergamo"
+                        target="_blank"
+                        ><img
+                            src="{% static 'media/icons/linkedin_icon.png' %}"
+                            alt="LinkedIn"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

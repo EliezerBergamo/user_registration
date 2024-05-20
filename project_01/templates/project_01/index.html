@@ -1,0 +1,72 @@
+<!-- Arquivos estáticos -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Cadastro de usuários</title>
+
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="{% static 'media/favicon/favicon.ico' %}"
+        />
+    </head>
+    <body>
+        <!-- Inclusão do arquivo base do HTML -->
+        {% include 'project_01/base.html' %}
+
+        <main>
+            <section id="hero">
+                <div class="container">
+                    <div class="texto-hero">
+                        <h1>Cadastro de usuários</h1>
+                        <h2>
+                            Uma plataforma simples onde se pode cadastrar
+                            pessoas para algum fim de registro.
+                        </h2>
+                    </div>
+                    <div class="action">
+                        <a href="{% url 'project_01:list_user' %}"
+                            >Lista de usuários</a
+                        >
+                        <a href="{% url 'project_01:create_user' %}"
+                            >Cadastrar novo usuário</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>Todos os direitos reservados &copy; Eliezer Bergamo</p>
+
+                <div class="footer">
+                    <a href="mailto:eliezerbergamo@gmail.com" target="_blank"
+                        ><img
+                            src="{% static 'media/icons/email_icon.png' %}"
+                            alt="Email"
+                    /></a>
+                    <a href="https://github.com/EliezerBergamo" target="_blank"
+                        ><img
+                            src="{% static 'media/icons/github_icon.png' %}"
+                            alt="GitHub"
+                    /></a>
+                    <a
+                        href="https://www.linkedin.com/in/eliezer-bergamo"
+                        target="_blank"
+                        ><img
+                            src="{% static 'media/icons/linkedin_icon.png' %}"
+                            alt="LinkedIn"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
