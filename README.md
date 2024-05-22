@@ -72,7 +72,7 @@
     <h3>Colaboradores</h3>
     <ul>
       <li>
-        <a href="www.linkedin.com/in/eliezer-bergamo">Eliezer Bergamo</a>
+        Eliezer Bergamo
       </li>
     </ul>
   </div>
