@@ -18,7 +18,7 @@
     </p>
     <p  align="justify">
       Se algum dos usuários cadastrados ou gerados automaticamente tiverem alguma informação
-      que corresponda a algum dado da realidade, será apenas uma coincidência
+      que corresponda a algum dado da realidade, será apenas uma coincidência.
     </p>
   </div><hr>
 
