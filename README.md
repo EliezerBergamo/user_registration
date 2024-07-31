@@ -84,15 +84,15 @@
     <h3>1 - When you access the project, you will see this initial page.</h3>
     <img src="https://github.com/user-attachments/assets/8cf319fd-b733-4d1e-8767-4ad743ed7e7c" alt="home" width="1200"/>
     <h3>2 - You can click on add icon or just click in matching text to add a new users and there is also a button that generates users randomly.</h3>
-    <img src="https://github.com/user-attachments/assets/f98a6490-9ae0-4393-bd38-3c54298bd953" alt="home" width="1200"/>
+    <img src="https://github.com/user-attachments/assets/f98a6490-9ae0-4393-bd38-3c54298bd953" alt="user_add" width="1200"/>
     <h3>3 - You can click on list icon or just click in matching text to see all users.</h3>
-    <img src="https://github.com/user-attachments/assets/c2340d4a-b07e-4692-ba54-f75f79e4f96c" alt="home" width="1200"/>
+    <img src="https://github.com/user-attachments/assets/c2340d4a-b07e-4692-ba54-f75f79e4f96c" alt="user_list" width="1200"/>
     <h3>4 - Click on detail icon to see information about the user.</h3>
-    <img src="https://github.com/user-attachments/assets/74d7a991-ba09-4d7a-b8a6-0e5753e5dab6" alt="home" width="1200"/>
+    <img src="https://github.com/user-attachments/assets/74d7a991-ba09-4d7a-b8a6-0e5753e5dab6" alt="user_detail" width="1200"/>
     <h3>5 - Click on edit icon to edit the information about the user.</h3>
-    <img src="https://github.com/user-attachments/assets/6e73ebbb-670a-4b09-a5f7-5042497c544d" alt="home" width="1200"/>
+    <img src="https://github.com/user-attachments/assets/6e73ebbb-670a-4b09-a5f7-5042497c544d" alt="user_edit" width="1200"/>
     <h3>6 - Click on delete icon to delete the user.</h3>
-    <img src="https://github.com/user-attachments/assets/b200b27a-7a5b-4410-bf06-b0d9f0570359" alt="home" width="1200"/>
+    <img src="https://github.com/user-attachments/assets/b200b27a-7a5b-4410-bf06-b0d9f0570359" alt="user_delete" width="1200"/>
   </div>
 
   <div>
@@ -119,8 +119,9 @@
   <div>
     <h2>Versioning</h2>
     <p>1.0.0</p>
-</section>
+  </div>
 
-<footer>
-  <p align="center">All rights reserved &copy Eliezer Bergamo</p>
-</footer>
+  <footer>
+    <p align="center">All rights reserved &copy Eliezer Bergamo</p>
+  </footer>
+</section>
