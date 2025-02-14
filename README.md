@@ -23,7 +23,7 @@
   </div>
 
   <div>
-    <h2>Technology</h2>
+    <h2>Technologies</h2>
     <h4>Frontend</h4>
     <ul>
       <li>HTML</li>
